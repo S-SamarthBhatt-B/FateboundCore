@@ -296,7 +296,7 @@ Examples: 🐉 FATE SHIFTED
 
 - Minecraft **1.21.X**
 - Paper or Purpur
-- Java **17**
+- Java **25**
 - No additional dependencies required
 
 ---
