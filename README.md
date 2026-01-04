@@ -1,204 +1,215 @@
 # 🔮 FateboundCore
 
-> A story-driven survival core plugin built on **permanent consequences, powerful fates, and world-level relics**.
+> **A consequence-driven survival core where power is dangerous, fate is permanent, and the world tells its own story.**
 
-FateboundCore transforms a normal survival server into a living world where **power has responsibility**, **death has meaning**, and **players create the story**.
-
----
-
-## 📌 What is FateboundCore?
-
-**FateboundCore** is a meta-core plugin that introduces:
-
-- Permanent **Player Fates**
-- Powerful but dangerous **Powers**
-- Real, unavoidable **Weaknesses**
-- World-level **Fate Relics** (e.g. Dragon Egg)
-- Anti-AFK and anti-hiding mechanics
-- Natural PvP without forced rules
-
-It does **NOT** replace:
-- Economy
-- Claims
-- Teams
-- Vanilla survival
-
-It **reacts to events** and applies fate logic.
+FateboundCore is a meta-core Minecraft plugin designed to add **meaningful progression, permanent player fates, world relics, and real risk** to survival gameplay — without replacing economy, claims, or teams.
 
 ---
 
-## 🧠 Core Philosophy
+## 📌 Key Features
 
-> Power is temporary.  
-> Fate is permanent.
+- 🔗 Permanent **Player Fates**
+- ⚔️ Powerful abilities with real **weaknesses**
+- 🐉 World-level **Fate Relics** (Dragon Egg)
+- ☠️ PvP-driven power transfer
+- 💤 AFK & inactivity punishment
+- 📢 Server-wide fate notifications
+- 🧠 Anti-exploit & anti-alt protections
+- 🔌 Compatible with popular plugins
 
-### Design Rules
+---
+
+## 🎯 Design Philosophy
+
+> **Power must be carried.  
+> Fate must be faced.  
+> Hiding has consequences.**
+
+### Core Rules
 - Every power has a weakness
 - Stronger fate = higher risk
 - AFK and inactivity are punished
-- No pay-to-win mechanics
-- Server stories emerge naturally
+- No pay-to-win advantages
+- Gameplay creates stories naturally
+
+FateboundCore **reacts to gameplay** instead of forcing it.
 
 ---
 
 ## ⚙️ How FateboundCore Works
 
-FateboundCore listens to:
+FateboundCore is an **event-driven meta-core**.
+
+### It LISTENS to:
 - Player deaths
 - PvP kills
 - Inventory actions
-- AFK & inactivity
+- AFK & login time
+- World changes
 - Relic ownership
-- World transitions
 
-It applies fate logic **without overriding other plugins**.
+### It DOES NOT:
+- Replace economy plugins
+- Override land-claim plugins
+- Replace teams or clans
+- Break vanilla survival
 
-Compatible with:
-- GriefPrevention
-- Teams / Clans
-- Vault-based economy
-- NPCs, menus, crates, anticheat
+It applies **fate logic on top of your server**.
 
 ---
 
-## 🔗 Player Fate System
+## 🔌 Compatibility
 
-Each player is bound to **ONE fate at a time**.
+Fully compatible with:
+- GriefPrevention
+- WorldGuard (with region respect)
+- Vault-based economies
+- Teams / Clans plugins
+- NPCs (Citizens)
+- Menus (DeluxeMenus)
+- Anticheat (Grim)
+
+---
+
+## 🧬 Player Fate System
+
+Every player is bound to **ONE fate**.
 
 ### Fate Assignment
-- Random on first join  
-- Gained through relics or events  
-- Cannot be easily changed  
+- Random on first join (configurable)
+- Earned through relics or events
+- Cannot be freely changed
 
-Changing fate requires:
+### Fate Change Requirements
 - Rare ritual
-- High cost
-- Or admin permission
+- Heavy cost
+- Optional admin approval
+
+Fates are **identity-level**, not cosmetic.
 
 ---
 
-## 🧬 List of All Fates
+## 🧿 List of All Fates
 
 ---
 
-### 🐉 Dragonbound
-*(Dragon Egg Holder)*
+## 🐉 Dragonbound
+**(World Relic Holder – Dragon Egg)**
 
-**How to Obtain**
+### How to Obtain
 - Kill the current Dragonbound
-- Retrieve the Dragon Egg from the End
+- Claim the Dragon Egg from the End
 
-**Powers**
+### Powers
 - +2 permanent max hearts
 - Fire resistance near lava
-- Bonus damage in the End
-- Intimidation aura on nearby players
+- Increased damage in the End
+- Intimidation aura (nearby players briefly glow)
 
-**Weaknesses**
-- Always revealed server-wide
+### Weaknesses
+- Server-wide visibility
+- Constant PvP threat
 - Cannot stay AFK
 - Offline 3+ days = fate lost
 - Death instantly transfers fate
 
 ---
 
-### 🩸 Bloodbound
-*(PvP Predator)*
+## 🩸 Bloodbound
+**(PvP Predator)**
 
-**Powers**
+### Powers
 - Lifesteal on player kills
-- Strength boost at low health
-- Faster post-combat regeneration
+- Strength boost below 5 hearts
+- Faster regeneration after combat
 
-**Weaknesses**
+### Weaknesses
 - Extra mob damage
-- Cannot use golden apples
+- Golden apples disabled
 - Death reduces max hearts
 
 ---
 
-### 🌑 Voidmarked
-*(Risk Taker)*
+## 🌑 Voidmarked
+**(High-Risk Explorer)**
 
-**Powers**
-- No void damage
-- Short-distance teleport
+### Powers
+- Immune to void damage
+- Short-distance teleport ability
 - Reduced fall damage
 
-**Weaknesses**
-- Weak in daylight
+### Weaknesses
+- Weakness in daylight
 - Mining fatigue above Y=64
-- Drops extra loot on death
+- Drops additional loot on death
 
 ---
 
-### 🔥 Ashen Soul
-*(Nether-Aligned)*
+## 🔥 Ashen Soul
+**(Nether-Aligned)**
 
-**Powers**
+### Powers
 - Fire immunity
-- Increased Nether damage
-- Faster netherite crafting
+- Bonus damage in the Nether
+- Faster netherite processing
 
-**Weaknesses**
-- Takes damage in water
+### Weaknesses
+- Water damage
 - Slowness during rain
-- Weakness in Overworld nights
+- Weakness effect in Overworld nights
 
 ---
 
-### 🌿 Earthbound
-*(Builder / Survivor)*
+## 🌿 Earthbound
+**(Builder / Survivor)**
 
-**Powers**
-- Extra armor points
+### Powers
+- Bonus armor points
 - Faster block breaking
 - Increased crop yields
 
-**Weaknesses**
+### Weaknesses
 - Reduced PvP damage
 - Slower combat movement
 - Elytra penalties
 
 ---
 
-### ⚖️ Oathbroken
-*(Punishment Fate)*
+## ⚖️ Oathbroken
+**(Punishment Fate)**
 
-**How to Obtain**
+### How to Obtain
 - Team betrayal
 - Combat logging
 - Severe rule violations
 
-**Powers**
+### Powers
 - None
 
-**Weaknesses**
+### Weaknesses
 - Increased damage taken
-- Cannot use relics
-- Public mark in chat
+- Relics disabled
+- Public fate mark
 
-Removed only via redemption.
+Removed only through redemption.
 
 ---
 
 ## 🐲 Fate Relics System
 
-Relics are **world-level artifacts**, not normal items.
+Fate Relics are **world-level artifacts**, not normal items.
 
-### Available Relics
-- Dragon Egg (active)
-- Nether Star (planned)
-- Beacon Heart (planned)
-- Ancient Totem (planned)
-
-Only **one player** can bind to a relic at a time.
+### Core Rules
+- Only ONE active holder
+- Cannot be duplicated
+- Cannot be destroyed
+- Transfers only through fate rules
 
 ---
 
-## 🐉 Dragon Egg Relic (Full Rules)
+## 🐉 Dragon Egg Relic – Full Rules
 
-### Binding Rules
+### Inventory Binding
 - Cannot be dropped
 - Cannot be stored
 - Cannot be renamed
@@ -207,8 +218,8 @@ Only **one player** can bind to a relic at a time.
 
 ### PvP Transfer
 If the holder is killed by a player:
-- Egg transfers instantly to killer
-- No drops
+- Egg transfers instantly
+- No item drop
 - No delay
 - Inventory force-insert if full
 
@@ -216,24 +227,25 @@ If the holder is killed by a player:
 
 ## 💤 AFK & Inactivity System
 
-The Dragon Egg rejects inactive holders.
+The Dragon Egg **rejects inactive holders**.
 
-### Offline
+### Offline Rule
 - Offline for 3 days → Egg returns to End
 
-### AFK
-- AFK too long → Egg abandons holder
-- Movement-based detection (AFK machines don’t work)
+### AFK Rule
+- Extended AFK → Egg abandons holder
+- Movement + interaction based detection
+- AFK machines do NOT work
 
 ---
 
-## 🌌 Return to the End
+## 🌌 Egg Return to the End
 
 When abandoned:
 - Egg teleports to the End
-- Spawn locations:
+- Spawn options:
   - End portal bedrock
   - Random obsidian pillar
-  - Custom altar
+  - Custom coordinates
 
-Broadcast message:
+### Broadcast Message
